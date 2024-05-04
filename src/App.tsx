@@ -8,7 +8,7 @@ function App() {
       <div className="container mx-auto h-screen bg-neutral-800">
         <div className="relative h-30 bg-neutral-900 text-center flex flex-col justify-center">
           <img
-            src="src/assets/icons/logo.png"
+            src="public/icons/logo.png"
             alt=""
             className="mx-auto my-6 text-3xl font-bold text-sky-600 py-6"
           />
@@ -19,7 +19,7 @@ function App() {
               placeholder="Adicione uma nova tarefa"
             />
             <button className="rounded-md bg-sky-700 px-4 py-3 text-white">
-              <img src="src/assets/icons/plus.png" alt="plus" />
+              <img src="public/icons/plus.png" alt="plus" />
             </button>
           </div>
         </div>
@@ -42,7 +42,7 @@ function App() {
         <div className="text-center">
           <img
             className="mx-auto m-4 mt-10 w-16"
-            src="src/assets/icons/list.png"
+            src="public/icons/list.png"
             alt="list icon"
           />
           <p className="text-gray-400 font-semibold text-sm">
@@ -51,6 +51,44 @@ function App() {
           <p className="text-gray-400 text-sm">
             Crie tarefas e organize seus itens a fazer
           </p>
+        </div>
+        <div className="px-6 flex flex-col gap-2">
+          <div className="bg-neutral-700 p-3 rounded-md flex gap-2 items-center">
+            <input
+              type="radio"
+              name=""
+              id=""
+              className="rounded- w-6 h-6 bg-transparent flex-none"
+            />
+            <p className="text-gray-200 flex-grow ">
+              Integer urna interdum massa li auctor neque turpis turpis
+            </p>
+            <img src="public/icons/trash.png" className="w-12 h-12 flex-none" />
+          </div>
+          <div className="bg-neutral-700 p-3 rounded-md flex gap-2 items-center">
+            <input
+              type="radio"
+              name=""
+              id=""
+              className="bg-neutral-300 w-6 h-6 rounded flex-none"
+            />
+            <p className="text-gray-400 flex-grow line-through ">
+              Integer urna interdum massa li auctor neque turpis turpis
+            </p>
+            <img src="public/icons/trash.png" className="w-12 h-12 flex-none" />
+          </div>
+          <div className="bg-neutral-700 p-3 rounded-md flex gap-2 items-center">
+            <input
+              type="radio"
+              name=""
+              id=""
+              className="bg-neutral-300 w-6 h-6 rounded flex-none"
+            />
+            <p className="text-gray-200 flex-grow ">
+              Integer urna interdum massa li auctor neque turpis turpis
+            </p>
+            <img src="public/icons/trash.png" className="w-12 h-12 flex-none" />
+          </div>
         </div>
       </div>
     </>
