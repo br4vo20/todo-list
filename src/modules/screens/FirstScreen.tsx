@@ -6,11 +6,11 @@ import Logo from '../components/Logo';
 const FirstScreen = () => {
   const [tarefa, setTarefa] = useState('');
 
-  const hendletarefa = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handletarefa = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTarefa(event.target.value);
   };
 
-  const hendleSave = () => {
+  const handleSave = () => {
     alert(tarefa);
   };
 
@@ -23,12 +23,12 @@ const FirstScreen = () => {
             className="outline-indigo-400 rounded-md bg-neutral-700 p-2 w-64"
             type="text"
             placeholder="Adicione uma nova tarefa"
-            onChange={hendletarefa}
+            onChange={handletarefa}
             value={tarefa}
           />
           <button
             className="rounded-md bg-sky-700 px-4 py-3 text-white"
-            onClick={hendleSave}
+            onClick={handleSave}
           >
             <img src="public/icons/plus.png" alt="plus" />
           </button>
